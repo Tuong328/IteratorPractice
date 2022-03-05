@@ -1,8 +1,8 @@
-#Iterator Design Practice
+# Iterator Design Practice
 Designing an iterator that iterates through a list of assignments that contain
 respective due dates, and returns the assignments in the order that they are due.
 
-###Given Classes and Interfaces
+### Given Classes and Interfaces
 `AssignmentImpl` - Implementation of `Assignment` interface that contains these fields
 ```
 private final String name;
@@ -31,7 +31,7 @@ void setDueDate(LocalDate dueDate);
 /**Gets days left to complete**/
 int getDaysTilDue();
 ```
-##Objective
+## Objective
 Create an iterator class `AssignmentIterator` that implements
 `Iterator<Assignment>` with constructor
 ```java
@@ -45,7 +45,7 @@ over and start searching for assignments that are due in 1 day, then 2 days, etc
 
 Keep iterating until ALL assignments have been returned
 
-####Creating an Assignment Object for Testing
+#### Creating an Assignment Object for Testing
 make sure to 'import java.time.LocalDate;'
 ```java
 LocalDate dueDate = LocalDate.of(2022, 3, 14);
