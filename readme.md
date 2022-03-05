@@ -45,6 +45,13 @@ over and start searching for assignments that are due in 1 day, then 2 days, etc
 
 Keep iterating until ALL assignments have been returned
 
+An `AssignmentIterator` should contain private instance fields for:
+1) An iterator of assignment objects
+2) An iterable list of assignment objects
+3) An assignment field to hold the next assignment
+4) An integer to see how many days away our iterator will check
+5) An integer to represent the total count of assignments in the iterable list
+6) An integer to represent the assignments we have RETURNED.
 #### Creating an Assignment Object for Testing
 make sure to 'import java.time.LocalDate;'
 ```java
