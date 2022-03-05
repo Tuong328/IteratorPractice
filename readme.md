@@ -49,7 +49,7 @@ Keep iterating until ALL assignments have been returned
 make sure to 'import java.time.LocalDate;'
 ```java
 LocalDate dueDate = LocalDate.of(2022, 3, 14);
-        String assignmentName = "A05-Driver";
-        String courseName = "COMP 301";
-        AssignmentImpl assignment1 = new AssignmentImpl(assignmentName, courseName, dueDate);
+String assignmentName = "A05-Driver";
+String courseName = "COMP 301";
+AssignmentImpl assignment1 = new AssignmentImpl(assignmentName, courseName, dueDate);
 ```
